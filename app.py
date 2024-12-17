@@ -18,7 +18,7 @@ if st.button("Mostrar histograma del total de coches por modelo"):
     fig = px.histogram(
         car_data, 
         x="model",
-        title="Distribución del Odómetro",
+        title="Total de coches por modelo",
         labels={"model": "modelo del coche","count":"Total de coches"})
     st.plotly_chart(fig, use_container_width=True)
 
